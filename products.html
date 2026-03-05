@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - ShopHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">🛍️ ShopHub</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Explore our wide selection of premium items</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container">
+                <!-- Filter Sidebar -->
+                <aside class="filter-sidebar">
+                    <h3>Filter Products</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <div class="filter-options">
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Electronics" checked>
+                                Electronics
+                            </label>
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Fashion" checked>
+                                Fashion
+                            </label>
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Home" checked>
+                                Home & Decor
+                            </label>
+                            <label>
+                                <input type="checkbox" class="category-filter" value="Sports" checked>
+                                Sports
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <input type="range" id="priceRange" min="0" max="1000" value="1000" class="price-slider">
+                        <div class="price-display">Up to: $<span id="priceValue">1000</span></div>
+                    </div>
+
+                    <button class="btn btn-secondary" id="resetFilters">Reset Filters</button>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="main-content">
+                    <div class="products-controls">
+                        <div class="results-count">
+                            <span id="productsCount">0</span> products found
+                        </div>
+                        <select id="sortBy" class="sort-select">
+                            <option value="newest">Newest</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="popular">Most Popular</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <p>Your trusted destination for quality products and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

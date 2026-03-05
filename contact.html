@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShopHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">🛍️ ShopHub</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Get in touch with us.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have a question or feedback? Reach out to us and we'll respond as soon as possible.</p>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Commerce Street<br>New York, NY 10001<br>USA</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+12025551234">+1 (202) 555-1234</a></p>
+                                <p>Available Monday-Friday, 9 AM - 6 PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:support@shophub.com">support@shophub.com</a></p>
+                                <p><a href="mailto:sales@shophub.com">sales@shophub.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9 AM - 6 PM EST<br>Saturday: 10 AM - 4 PM EST<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox">
+                                <input type="checkbox" id="subscribe" name="subscribe">
+                                Subscribe to our newsletter
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                    <div id="formMessage" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer a 30-day money-back guarantee on all products. If you're not satisfied, simply return the item in its original condition for a full refund.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How long does shipping take?</h4>
+                    <p>Standard shipping takes 5-7 business days. Express shipping is 2-3 days, and overnight shipping is available for an additional fee.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes, we ship to most countries worldwide. Shipping costs and delivery times vary by location. See shipping details at checkout.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is my payment information secure?</h4>
+                    <p>Yes, we use industry-standard SSL encryption to protect your payment information. All transactions are secure and PCI compliant.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I cancel or modify my order?</h4>
+                    <p>If you haven't completed checkout, you can modify your order. After checkout, contact our customer support team immediately for assistance.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer bulk discounts?</h4>
+                    <p>Yes! For bulk orders, please contact our sales team at sales@shophub.com for special pricing and arrangements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <p>Your trusted destination for quality products and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

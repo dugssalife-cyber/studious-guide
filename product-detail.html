@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">🛍️ ShopHub</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="cart.html" class="nav-link cart-link">🛒 Cart <span class="cart-count">0</span></a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Home</a> / <a href="products.html">Products</a> / <span id="breadcrumbProduct">Product</span>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="detail-grid">
+                <!-- Product Image -->
+                <div class="product-image-section">
+                    <div class="main-image">
+                        <img id="mainImage" src="" alt="Product Image">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-section">
+                    <div class="product-details">
+                        <div class="category-badge" id="categoryBadge">Category</div>
+                        <h1 id="productName">Product Name</h1>
+                        
+                        <div class="rating">
+                            <span class="stars" id="productRating">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(<span id="reviewCount">0</span> reviews)</span>
+                        </div>
+
+                        <div class="price-section">
+                            <h2 class="price" id="productPrice">$0.00</h2>
+                            <span class="stock-status" id="stockStatus">In Stock</span>
+                        </div>
+
+                        <p class="description" id="productDescription">Product description will appear here.</p>
+
+                        <div class="features" id="productFeatures">
+                            <!-- Features will be added here -->
+                        </div>
+
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <div class="qty-input">
+                                <button class="qty-btn" id="decreaseQty">−</button>
+                                <input type="number" id="quantity" value="1" min="1" max="100">
+                                <button class="qty-btn" id="increaseQty">+</button>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn btn-primary btn-large" id="addToCartBtn">Add to Cart</button>
+                            <button class="btn btn-secondary btn-large" id="wishlistBtn">♡ Wishlist</button>
+                        </div>
+
+                        <div class="product-meta">
+                            <p><strong>SKU:</strong> <span id="productSKU">SKU123</span></p>
+                            <p><strong>Available:</strong> <span id="productStock">100</span> units</p>
+                            <p><strong>Shipping:</strong> Free shipping on orders over $50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2>Related Products</h2>
+            <div class="products-grid" id="relatedProducts">
+                <!-- Related products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About ShopHub</h4>
+                    <p>Your trusted destination for quality products and exceptional service.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ShopHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
